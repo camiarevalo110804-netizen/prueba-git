@@ -1,0 +1,15 @@
+{
+  "name": "prueba-git",
+  "version": "1.0.0",
+  "description": "Proyecto de prueba con recarga en caliente para index.html",
+  "private": true,
+  "scripts": {
+    "start": "npx live-server --quiet --port=3000",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
