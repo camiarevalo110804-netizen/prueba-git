@@ -12,8 +12,26 @@
 		<h1>hola como te va</h1>
 		<p>hola hola hola</p>
 		<h2> 123</h2>
+
+		<!-- Botón que mostrará un mensaje o imagen al hacer click -->
+		<button id="action-btn">Mostrar mensaje / imagen</button>
+		<div id="controls" style="margin-top:1rem; display:flex; gap:0.5rem; align-items:center;">
+			<label for="shape-select">Forma:</label>
+			<select id="shape-select">
+				<option value="wave">Onda</option>
+				<option value="heart">Corazón</option>
+				<option value="star">Estrella</option>
+			</select>
+			<label for="speed-range">Velocidad:</label>
+			<input id="speed-range" type="range" min="400" max="3000" step="100" value="1400" />
+			<span id="speed-value">1400ms</span>
+			<button id="reset-btn">Reiniciar</button>
+			<label style="display:flex;align-items:center;gap:.25rem;"><input id="repeat-chk" type="checkbox" /> Repetir</label>
+		</div>
+		<div id="output" aria-live="polite" style="margin-top:1rem;"></div>
+
 		<!-- Puedes editar este archivo y la página se recargará automáticamente si ejecutas el servidor de desarrollo -->
-			<script type="module" src="/src/main.js"></script>
+		<script type="module" src="/src/main.js"></script>
 	</body>
     
 </html>
